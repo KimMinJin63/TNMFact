@@ -160,10 +160,13 @@ class EditPage extends GetView<EditController> {
                               );
                               Get.back();
                               Get.back();
+                              print('여긴 그래서 뭐가 뜨는데? : $imagePath');
+                              print('여긴 그래서 뭐가 뜨는데?3333 : ${controller.imageUrl}');
+                              print('여긴 그래서 뭐가 뜨는데?112222 : $picture');
                               Get.toNamed(DetailNewsPage.route, arguments: [
                                 titleValue.value,
                                 imagePath != null
-                                    ? imagePath
+                                    ? controller.imageUrl
                                     : picture, // 이미지가 선택되었으면 새 이미지, 아니면 기존 이미지 사용
                                 contentValue.value,
                                 dateTime,

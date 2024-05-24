@@ -82,6 +82,7 @@ class EditController extends GetxController {
 
       if (imageUrl.isNotEmpty) {
         updateData['image'] = imageUrl;
+        print('왜 자꾸 문제냐!! : $imageUrl');
       }
 
       await FirebaseFirestore.instance.collection('posts').doc(docId).update(updateData);
