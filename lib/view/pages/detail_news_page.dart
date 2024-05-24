@@ -12,11 +12,11 @@ class DetailNewsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final headline = Get.arguments != null ? Get.arguments[0] : '';
-    final picture = Get.arguments != null ? Get.arguments[1] : '';
-    final content = Get.arguments != null ? Get.arguments[2] : '';
-    final dateTime = Get.arguments != null ? Get.arguments[3] : '';
-    final documentId = Get.arguments != null ? Get.arguments[4] : '';
+    final headline = Get.arguments != null ? Get.arguments[0] ?? '' : '';
+    final picture = Get.arguments != null ? Get.arguments[1] ?? '' : '';
+    final content = Get.arguments != null ? Get.arguments[2] ?? '' : '';
+    final dateTime = Get.arguments != null ? Get.arguments[3] ?? '' : '';
+    final documentId = Get.arguments != null ? Get.arguments[4] ?? '' : '';
     print(documentId);
     print('이미지는 뭘까? : $picture');
     return Scaffold(
@@ -57,8 +57,7 @@ class DetailNewsPage extends StatelessWidget {
                       child: SizedBox(
                         width: MediaQuery.of(context).size.width,
                         child: Text(
-                          headline,
-                          // softWrap: true,
+                          headline,                          // softWrap: true,
                           // overflow: TextOverflow.ellipsis,
                           maxLines: 3,
                           style: AppTextStyle.koPtBold27(),

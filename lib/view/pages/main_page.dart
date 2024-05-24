@@ -119,7 +119,7 @@ class MainPage extends GetView<MainController> {
                         '영천시, 수도권 원정 고향사랑기부제 홍보',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: ScreenUtil().setSp(65),
+                          fontSize: ScreenUtil().setSp(60),
                         ),
                       ),
                     )

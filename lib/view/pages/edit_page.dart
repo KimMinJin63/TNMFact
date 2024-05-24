@@ -144,6 +144,7 @@ class EditPage extends GetView<EditController> {
                           RxString contentValue =
                               controller.textEditingController2.text.obs;
                           bool mainNews = controller.isChecked.value;
+                          print('이거슨 내용이다!!! : $contentValue');
 
                           if (titleValue.isNotEmpty &&
                               contentValue.isNotEmpty) {
@@ -160,6 +161,7 @@ class EditPage extends GetView<EditController> {
                               );
                               Get.back();
                               Get.back();
+                              print('여긴 그래서 뭐가 뜨는데? : ${contentValue.value}');
                               print('여긴 그래서 뭐가 뜨는데? : $imagePath');
                               print('여긴 그래서 뭐가 뜨는데?3333 : ${controller.imageUrl}');
                               print('여긴 그래서 뭐가 뜨는데?112222 : $picture');
